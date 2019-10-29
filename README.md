@@ -18,6 +18,11 @@
     bundle install
     ```
 
+2. Setup database
+    ```bash
+    > rails db:migrate
+    > rails db:seed
+
 ### Run
 
 ```bash
