@@ -1,24 +1,27 @@
-# README
+# BLOG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
 
-* Ruby version
+## Development Guide
 
-* System dependencies
+### Prerequisite
 
-* Configuration
+1. Ruby 2.6.0 (using RVM is recommended)
 
-* Database creation
+### Setup
 
-* Database initialization
+1. Clone this repo and install required dependencies
+    ```bash
+    git clone https://github.com/eloknadialdf/blog
+    cd blog
+    bundle install
+    ```
 
-* How to run the test suite
+### Run
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails s
+```
 
-* Deployment instructions
-
-* ...
+Blog runs on `http://0.0.0.0:3000`
