@@ -1,1 +1,5 @@
-class Article < ApplicationRecord; end
+class Article < ApplicationRecord;
+  validates :title, :description, :state, presence: true
+
+  belongs_to :user
+end
