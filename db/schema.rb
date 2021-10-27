@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_27_093500) do
+ActiveRecord::Schema.define(version: 2021_10_27_102800) do
 
   create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-    t.integer "state", limit: 2, default: 1
+    t.string "title", null: false
+    t.string "description", null: false
+    t.integer "state", limit: 2, default: 1, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id", default: 0, null: false
@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 2021_10_27_093500) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "name"
-    t.integer "role", limit: 2, default: 0
+    t.string "username", null: false
+    t.string "name", null: false
+    t.integer "role", limit: 2, default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "email", default: "", null: false
